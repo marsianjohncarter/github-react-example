@@ -6,7 +6,7 @@ const stats = [
     { id: 2, name: 'Assets under holding', value: '$119 trillion' },
     { id: 3, name: 'New users annually', value: '46,000' },
   ]
-const aboutNavigation = [
+const projectsNavigation = [
     { name: "Home", href: "/", current: true },
     { name: "About", href: "/about", current: false },
     { name: "Projects", href: "/projects", current: false },
@@ -14,7 +14,7 @@ const aboutNavigation = [
 function Projects() {
     return (
       <>
-
+        <AppBar navigation={projectsNavigation}/>
               <div className="bg-white py-24 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                   <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
