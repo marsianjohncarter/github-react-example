@@ -7,9 +7,9 @@ const stats = [
     { id: 3, name: 'New users annually', value: '46,000' },
   ]
 const projectsNavigation = [
-    { name: "Home", href: "/", current: true },
+    { name: "Home", href: "/", current: false },
     { name: "About", href: "/about", current: false },
-    { name: "Projects", href: "/projects", current: false },
+    { name: "Projects", href: "/projects", current: true },
   ];
 function Projects() {
     return (
@@ -29,7 +29,8 @@ function Projects() {
                   </dl>
                 </div>
               </div>
-
+        
+        <h1 className="text-center">Visit my <a className="active:text-blue-700 target:shadow-lg text-blue-600 visited:text-purple-600" href="https://github.com/marsianjohncarter"><u>Github</u></a> to see what I am working on.</h1>
         </>
     );
 }

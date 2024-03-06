@@ -2,8 +2,8 @@ import './index.css'
 import AppBar from '../components/app-navbar/app-navbar';
 
 const aboutNavigation = [
-  { name: "Home", href: "/", current: true },
-  { name: "About", href: "/about", current: false },
+  { name: "Home", href: "/", current: false },
+  { name: "About", href: "/about", current: true },
   { name: "Projects", href: "/projects", current: false },
 ];
 
