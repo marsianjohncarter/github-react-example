@@ -4,17 +4,13 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import "./app-navbar.css";
 import { Link } from "react-router-dom";
 
-const navigation = [
-  { name: "Home", href: "/", current: true },
-  { name: "About", href: "/about", current: false },
-  { name: "Projects", href: "/projects", current: false },
-];
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function AppBar() {
+export default function AppBar(navigation) {
   return (
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (

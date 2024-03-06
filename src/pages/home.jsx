@@ -1,8 +1,16 @@
 import "./index.css";
+import AppBar from "../components/app-navbar/app-navbar";
+
+const homeNavigation = [
+  { name: "Home", href: "/", current: true },
+  { name: "About", href: "/about", current: false },
+  { name: "Projects", href: "/projects", current: false },
+];
 
 const Home = () => {
   return (
     <>
+    <AppBar navigation={homeNavigation}/>
       <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <svg
