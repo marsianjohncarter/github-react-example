@@ -5,6 +5,7 @@ const aboutNavigation = [
   { name: "Home", href: "/", current: false },
   { name: "About", href: "/about", current: true },
   { name: "Projects", href: "/projects", current: false },
+  { name: "MediaScroll", href: "/media", current: false, new: true },
 ];
 
 function About() {

@@ -6,11 +6,13 @@ const stats = [
     { id: 2, name: 'Assets under holding', value: '$119 trillion' },
     { id: 3, name: 'New users annually', value: '46,000' },
   ]
-const projectsNavigation = [
+  const projectsNavigation = [
     { name: "Home", href: "/", current: false },
     { name: "About", href: "/about", current: false },
     { name: "Projects", href: "/projects", current: true },
+    { name: "MediaScroll", href: "/media", current: false, new: true },
   ];
+  
 function Projects() {
     return (
       <>
