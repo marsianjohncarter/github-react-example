@@ -1,9 +1,16 @@
 import './index.css'
+import AppBar from '../components/app-navbar/app-navbar';
 
+const aboutNavigation = [
+  { name: "Home", href: "/", current: false },
+  { name: "About", href: "/about", current: true },
+  { name: "Projects", href: "/projects", current: false },
+];
 
 function About() {
   return (
     <>
+    <AppBar navigation={aboutNavigation}/>
       {/* component */}
       <section className="container mx-auto px-8 py-8 lg:py-40">
         <h2 className="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-blue-gray-900 !text-3xl !leading-snug lg:!text-4xl">

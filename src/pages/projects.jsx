@@ -1,14 +1,20 @@
+import './index.css';
+import AppBar from '../components/app-navbar/app-navbar';
 
 const stats = [
     { id: 1, name: 'Transactions every 24 hours', value: '44 million' },
     { id: 2, name: 'Assets under holding', value: '$119 trillion' },
     { id: 3, name: 'New users annually', value: '46,000' },
   ]
-
+const projectsNavigation = [
+    { name: "Home", href: "/", current: false },
+    { name: "About", href: "/about", current: false },
+    { name: "Projects", href: "/projects", current: true },
+  ];
 function Projects() {
     return (
-
-
+      <>
+        <AppBar navigation={projectsNavigation}/>
               <div className="bg-white py-24 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                   <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
@@ -23,8 +29,9 @@ function Projects() {
                   </dl>
                 </div>
               </div>
-
-          
+        
+        <h1 className="text-center">Visit my <a className="active:text-blue-700 target:shadow-lg text-blue-600 visited:text-purple-600" href="https://github.com/marsianjohncarter"><u>Github</u></a> to see what I am working on.</h1>
+        </>
     );
 }
 
