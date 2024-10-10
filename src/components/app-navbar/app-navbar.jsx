@@ -52,9 +52,12 @@ export default function AppBar({ navigation }) {
                             : "text-gray-300 hover:bg-gray-700 hover:text-white",
                           "rounded-md px-3 py-2 text-sm font-medium navigation-links"
                         )}
+                        
                         aria-current={item.current ? "page" : undefined}
                       >
+                        {/* {item.new ?  <span class="absolute top-0 end-0 inline-flex items-center py-0.5 px-1.5 rounded-full text-xs font-medium transform -translate-y-1/2 translate-x-1/2 bg-blue-500 text-white">New!</span> : null} */}
                         {item.name}
+                        
                       </a>
                     ))}
                   </div>

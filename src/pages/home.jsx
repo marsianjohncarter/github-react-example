@@ -5,6 +5,7 @@ const homeNavigation = [
   { name: "Home", href: "/", current: true },
   { name: "About", href: "/about", current: false },
   { name: "Projects", href: "/projects", current: false },
+  { name: "MediaScroll", href: "/media", current: false, new: true },
 ];
 
 const Home = () => {
