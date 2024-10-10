@@ -1,3 +1,4 @@
+
 <p align="center">
     <h1 align="center">GITHUB-REACT-EXAMPLE</h1>
 </p>
@@ -212,3 +213,7 @@ This project is protected under the GNU GENERAL PUBLIC LICENSE License. For more
 <br>
 
 *Readme generated with [AI Readme](https://github.com/eli64s/readme-ai-streamlit)*
+=======
+# React + Vite + Tailwind
+
+
